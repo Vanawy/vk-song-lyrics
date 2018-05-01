@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Vk song lyrics
-// @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Add search lyrics buttons for songs in vk
 // @author       @Vanawy [Vanawy Firo]
 // @match        https://vk.com/*
 // @require      http://code.jquery.com/jquery-latest.js
+// @updateURL    https://github.com/Vanawy/vk-song-lyrics/blob/master/vk-song-lyrics.user.js?raw=true
 // ==/UserScript==
 
 (function() {
