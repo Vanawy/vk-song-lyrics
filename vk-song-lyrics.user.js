@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         Vk song lyrics
-// @version      1.1
+// @namespace    vanawy
+// @version      1.2
 // @description  Add search lyrics buttons for songs in vk
 // @author       @Vanawy [Vanawy Firo]
 // @match        https://vk.com/*
