@@ -1,6 +1,8 @@
 # VK.com song lyrics buttons
 Add search lyrics buttons for songs in vk
 
+Добавляет кнопки поиска текста песни при наведении на аудиозаписи вк.
+
 
 ## Installation/Установка
 You will need a browser extension for loading userscripts. The reccommended ones are [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) for Firefox, and [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) for Chrome.
