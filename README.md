@@ -12,3 +12,5 @@ To install the userscript, simply click the link below, or go to the ".user.js" 
 Для установки скрипта, просто кликните на ссылку ниже, или перейдите на ".user.js" файл в репозитории и кликните "Raw" справа в верху. Расширение должно распознать скрипт и попросить подтверждения установки.
 
 [Install / Установить](/vk-song-lyrics.user.js?raw=true)
+
+[Gif preview / Предпросмотр](https://imgur.com/X1ty7TW)
