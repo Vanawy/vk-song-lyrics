@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vk song lyrics
 // @namespace    vanawy
-// @version      1.0.4
+// @version      1.0.5
 // @description  Add search lyrics buttons for songs in vk
 // @author       @Vanawy [Vanawy Firo]
 // @match        https://vk.com/*
@@ -23,9 +23,9 @@
             var artist = $("#song"+i).find('.audio_row__performer').text();
             var title = $("#song"+i).find('.audio_row__title_inner').text();
             var buttons = "<div style='' id='sl_song"+i+"'>" +
-                "<a target='_blank' href='https://www.google.com/search?q="+encodeURI(artist+" - "+name+" lyrics")+"'> [Search Lyrics]</a>" +
+                "<a target='_blank' href='https://www.google.com/search?q="+encodeURI(artist+" - "+title+" lyrics")+"'> [Search Lyrics]</a>" +
                 "<a target='_blank' href='https://genius.com/search?q="+encodeURI(artist+" - "+title)+"'> [Genius Lyrics]</a>" +
-                "<a target='_blank' href='https://www.google.com/search?q="+encodeURI(artist+" - "+name+" перевод")+"'> [Перевод]</a>" +
+                "<a target='_blank' href='https://www.google.com/search?q="+encodeURI(artist+" - "+title+" перевод")+"'> [Перевод]</a>" +
                 "</div>";
             $("#song"+i)
                 .append(buttons);
