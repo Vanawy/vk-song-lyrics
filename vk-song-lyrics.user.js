@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vk song lyrics
 // @namespace    vanawy
-// @version      1.0.6
+// @version      1.1.0
 // @description  Add search lyrics buttons for songs in vk
 // @author       @Vanawy [Vanawy Firo]
 // @match        https://vk.com/*
@@ -21,8 +21,8 @@
         if (typeof attr === typeof undefined || attr === false) {
             $( this ).wrap( "<div class='song' id='song"+i+"'></div>" );
             let current_song = $("#song"+i);
-            let artist = current_song.find('.audio_row__performers a').attr('data-performer');
-            let title = current_song.find('.audio_row__title_inner').text();
+            let artist = escapeHTML(current_song.find('.audio_row__performers a').text());
+            let title = escapeHTML(current_song.find('.audio_row__title_inner').text());
             let buttons = "<div style='' id='sl_song"+i+"'>" +
                 "<a target='_blank' href='https://www.google.com/search?q="+encodeURI(artist+" - "+title+" lyrics")+"'> [Search Lyrics]</a>" +
                 "<a target='_blank' href='https://genius.com/search?q="+encodeURI(artist+" - "+title)+"'> [Genius Lyrics]</a>" +
@@ -44,3 +44,15 @@
         $("#sl_"+attr).css("display", "contents");
     });
 })();
+
+function escapeHTML(text) {
+  var map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+
+  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
