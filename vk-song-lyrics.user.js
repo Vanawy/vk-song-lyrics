@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vk song lyrics
 // @namespace    vanawy
-// @version      1.1.0
+// @version      1.1.1
 // @description  Add search lyrics buttons for songs in vk
 // @author       @Vanawy [Vanawy Firo]
 // @match        https://vk.com/*
@@ -47,12 +47,11 @@
 
 function escapeHTML(text) {
   var map = {
-    '&': '&amp;',
     '<': '&lt;',
     '>': '&gt;',
     '"': '&quot;',
     "'": '&#039;'
   };
 
-  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+  return text.replace(/[<>"']/g, function(m) { return map[m]; });
 }
